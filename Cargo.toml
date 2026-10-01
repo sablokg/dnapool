@@ -1,0 +1,17 @@
+[package]
+name = "dnapool"
+version = "0.2.0"
+edition = "2024"
+description = "Padding, tensor encoding, and interaction-graph utilities for microbiome/DNA machine learning in Rust."
+license = "MIT"
+authors = ["Gaurav Sablok <gsablok@proton.me>"]
+readme = "README.md"
+keywords = ["dna", "bioinformatics", "machine-learning", "tensor", "graph"]
+categories = ["science", "data-structures"]
+
+[lib]
+name = "dnapool"
+path = "src/lib.rs"
+
+[dependencies]
+petgraph = { version = "0.8.3", features = ["all"] }
